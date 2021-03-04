@@ -58,8 +58,8 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Main View Controller" id="Jib-gc-tID"/>
                     <connections>
-                        <segue destination="2MF-a1-GLy" kind="show" id="bw7-2z-wM8"/>
-                        <segue destination="qD8-T6-KHa" kind="show" id="t2m-fx-q70"/>
+                        <segue destination="2MF-a1-GLy" kind="show" identifier="showImage" id="bw7-2z-wM8"/>
+                        <segue destination="qD8-T6-KHa" kind="show" identifier="showCources" id="t2m-fx-q70"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcA-vs-wbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
