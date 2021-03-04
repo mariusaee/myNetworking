@@ -69,7 +69,7 @@
         <!--Cources View Controller-->
         <scene sceneID="jwG-c5-Y8g">
             <objects>
-                <tableViewController title="Cources View Controller" id="qD8-T6-KHa" sceneMemberID="viewController">
+                <tableViewController title="Cources View Controller" id="qD8-T6-KHa" customClass="CourcesViewController" customModule="myNetworking" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sLm-Ig-ISb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,7 +137,7 @@
         <!--Image View Controller-->
         <scene sceneID="E1p-sp-AOg">
             <objects>
-                <viewController title="Image View Controller" id="2MF-a1-GLy" sceneMemberID="viewController">
+                <viewController title="Image View Controller" id="2MF-a1-GLy" customClass="ImageViewController" customModule="myNetworking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3W-aB-dZb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
