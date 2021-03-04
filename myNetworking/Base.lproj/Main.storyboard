@@ -75,10 +75,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="FRF-A5-G7a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="FRF-A5-G7a" customClass="CourseCell" customModule="myNetworking" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FRF-A5-G7a" id="fZI-Uj-HKq">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FRF-A5-G7a" id="fZI-Uj-HKq" customClass="CourseCell" customModule="myNetworking">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -121,6 +121,12 @@
                                         </stackView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseImage" destination="BgK-Gx-1n8" id="QQi-eS-1wz"/>
+                                    <outlet property="nameLabel" destination="IzX-ar-2L9" id="Y67-cv-bOe"/>
+                                    <outlet property="numberOfLessons" destination="MAw-f9-tuO" id="Q3i-ub-ebq"/>
+                                    <outlet property="numberOfTests" destination="1Lx-Hm-GNP" id="An0-qZ-Eza"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
