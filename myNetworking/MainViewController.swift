@@ -43,6 +43,17 @@ class MainViewController: UICollectionViewController {
     }
     
     // MARK: UICollectionViewDelegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let userAction = userActions[indexPath.item]
+        switch userAction {
+        case .downloadImage: performSegue(withIdentifier: "showImage", sender: nil)
+        case .exampleOne: exampleOneButtonPressed()
+        case .exampleTwo: exampleTwoButtonPressed()
+        case .exampleThree: exampleThreeButtonPressed()
+        case .exampleFour: exampleFourButtonPressed()
+        case .ourCourses: performSegue(withIdentifier: "showCources", sender: nil)
+        }
+    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
