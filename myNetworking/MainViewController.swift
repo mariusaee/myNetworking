@@ -25,20 +25,24 @@ enum UserActions: String, CaseIterable {
 }
 
 class MainViewController: UICollectionViewController {
+    
+    let userActions = UserActions.allCases
 
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        userActions.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserActionCell
 
+        let userAction = userActions[indexPath.item]
+        cell.userActionLabel.text = userAction.rawValue
+        
         return cell
     }
     
     // MARK: UICollectionViewDelegate
-    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -86,7 +90,6 @@ extension MainViewController {
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     // протокол отвечает за настройку внешнего вида ячеек в collectionView
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
     }
