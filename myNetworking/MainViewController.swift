@@ -32,10 +32,53 @@ class MainViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserActionCell
-        
+
         return cell
     }
     
+    // MARK: UICollectionViewDelegate
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
+    // MARK: - Private Methods
+    private func successAlert() {
+        let alert = UIAlertController(title: "Success",
+                                      message: "You can see results in Debug area",
+                                      preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+    
+    private func failedAlert() {
+        let alert = UIAlertController(title: "Fail",
+                                      message: "You can see results in Debug area",
+                                      preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
+// MARK: - Networking
+extension MainViewController {
+    private func exampleOneButtonPressed() {
+        
+    }
+    private func exampleTwoButtonPressed() {
+        
+    }
+    private func exampleThreeButtonPressed() {
+        
+    }
+    private func exampleFourButtonPressed() {
+        
+    }
 }
