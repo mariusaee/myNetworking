@@ -82,3 +82,12 @@ extension MainViewController {
         
     }
 }
+
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    // протокол отвечает за настройку внешнего вида ячеек в collectionView
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
+    }
+}
