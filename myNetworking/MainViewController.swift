@@ -110,6 +110,19 @@ extension MainViewController {
     
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
+            
+            do {
+                let courses = try JSONDecoder().decode([Course].self, from: data)
+                print(courses)
+                DispatchQueue.main.async {
+                    self.successAlert()
+                }
+            } catch let error {
+                print(error)
+                DispatchQueue.main.async {
+                    self.failedAlert()
+                }
+            }
         }.resume()
     }
     
@@ -118,6 +131,19 @@ extension MainViewController {
     
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
+            
+            do {
+                let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                print(websiteDescription)
+                DispatchQueue.main.async {
+                    self.successAlert()
+                }
+            } catch let error {
+                print(error)
+                DispatchQueue.main.async {
+                    self.failedAlert()
+                }
+            }
         }.resume()
     }
     
@@ -126,6 +152,19 @@ extension MainViewController {
     
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
+            
+            do {
+                let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                print(websiteDescription)
+                DispatchQueue.main.async {
+                    self.successAlert()
+                }
+            } catch let error {
+                print(error)
+                DispatchQueue.main.async {
+                    self.failedAlert()
+                }
+            }
         }.resume()
     }
 }
