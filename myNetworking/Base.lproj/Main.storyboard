@@ -150,8 +150,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-xg-Hvf">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-xg-Hvf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Bv6-Ih-XNW">
                                 <rect key="frame" x="197" y="465" width="20" height="20"/>
@@ -163,7 +163,7 @@
                         <constraints>
                             <constraint firstItem="uhl-xg-Hvf" firstAttribute="leading" secondItem="vEX-1U-rgF" secondAttribute="leading" id="4yP-md-5QA"/>
                             <constraint firstItem="uhl-xg-Hvf" firstAttribute="top" secondItem="vEX-1U-rgF" secondAttribute="top" id="Rt6-op-6W5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="uhl-xg-Hvf" secondAttribute="bottom" id="krs-3F-QhX"/>
+                            <constraint firstAttribute="bottom" secondItem="uhl-xg-Hvf" secondAttribute="bottom" id="krs-3F-QhX"/>
                             <constraint firstItem="vEX-1U-rgF" firstAttribute="trailing" secondItem="uhl-xg-Hvf" secondAttribute="trailing" id="oOq-Ky-rnz"/>
                         </constraints>
                     </view>
