@@ -5,7 +5,7 @@
 //  Created by Marius Malyshev on 07.03.2021.
 //
 
-struct Course {
+struct Course: Decodable {
     let name: String?
     let imageUrl: String?
     let number_of_lessons: Int?

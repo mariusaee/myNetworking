@@ -89,8 +89,15 @@ extension MainViewController {
     
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
+            
+            do {
+                let course = try JSONDecoder().decode(Course.self, from: data)
+            } catch let error {
+                print(error)
+            }
         }.resume()
     }
+    
     private func exampleTwoButtonPressed() {
         guard let url = URL(string: URLExamples.exampleTwo.rawValue) else { return }
     
@@ -98,6 +105,7 @@ extension MainViewController {
             guard let data = data else { return }
         }.resume()
     }
+    
     private func exampleThreeButtonPressed() {
         guard let url = URL(string: URLExamples.exampleThree.rawValue) else { return }
     
@@ -105,6 +113,7 @@ extension MainViewController {
             guard let data = data else { return }
         }.resume()
     }
+    
     private func exampleFourButtonPressed() {
         guard let url = URL(string: URLExamples.exampleFour.rawValue) else { return }
     
