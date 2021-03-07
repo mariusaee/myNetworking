@@ -14,5 +14,7 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
     }
 }
