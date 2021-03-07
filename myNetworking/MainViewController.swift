@@ -92,8 +92,15 @@ extension MainViewController {
             
             do {
                 let course = try JSONDecoder().decode(Course.self, from: data)
+                print(course)
+                DispatchQueue.main.async {
+                    self.successAlert()
+                }
             } catch let error {
                 print(error)
+                DispatchQueue.main.async {
+                    self.failedAlert()
+                }
             }
         }.resume()
     }
