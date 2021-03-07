@@ -57,7 +57,10 @@ class MainViewController: UICollectionViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "showCources" {
+            let courcesVC = segue.destination as! CourcesViewController
+            courcesVC.fetchCourses()
+        }
     }
     
     // MARK: - Private Methods
