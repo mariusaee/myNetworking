@@ -85,16 +85,32 @@ class MainViewController: UICollectionViewController {
 // MARK: - Networking
 extension MainViewController {
     private func exampleOneButtonPressed() {
-        
+        guard let url = URL(string: URLExamples.exampleOne.rawValue) else { return }
+    
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+        }.resume()
     }
     private func exampleTwoButtonPressed() {
-        
+        guard let url = URL(string: URLExamples.exampleTwo.rawValue) else { return }
+    
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+        }.resume()
     }
     private func exampleThreeButtonPressed() {
-        
+        guard let url = URL(string: URLExamples.exampleThree.rawValue) else { return }
+    
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+        }.resume()
     }
     private func exampleFourButtonPressed() {
-        
+        guard let url = URL(string: URLExamples.exampleFour.rawValue) else { return }
+    
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+        }.resume()
     }
 }
 

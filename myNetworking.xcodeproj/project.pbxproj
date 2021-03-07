@@ -17,6 +17,7 @@
 		29196DF325F163A000E376BD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29196DF225F163A000E376BD /* ImageViewController.swift */; };
 		29196DF625F1641A00E376BD /* CourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29196DF525F1641A00E376BD /* CourcesViewController.swift */; };
 		29196DFB25F164AE00E376BD /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29196DFA25F164AE00E376BD /* CourseCell.swift */; };
+		297A923125F5032300D1A08D /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A923025F5032300D1A08D /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		29196DF225F163A000E376BD /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		29196DF525F1641A00E376BD /* CourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourcesViewController.swift; sourceTree = "<group>"; };
 		29196DFA25F164AE00E376BD /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		297A923025F5032300D1A08D /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				29196DF525F1641A00E376BD /* CourcesViewController.swift */,
 				29196DFA25F164AE00E376BD /* CourseCell.swift */,
 				29196DE925F158C000E376BD /* UserActionCell.swift */,
+				297A923025F5032300D1A08D /* Course.swift */,
 				29196DDA25F1528200E376BD /* Main.storyboard */,
 				29196DDD25F1528500E376BD /* Assets.xcassets */,
 				29196DDF25F1528500E376BD /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297A923125F5032300D1A08D /* Course.swift in Sources */,
 				29196DEA25F158C000E376BD /* UserActionCell.swift in Sources */,
 				29196DD525F1528200E376BD /* AppDelegate.swift in Sources */,
 				29196DF325F163A000E376BD /* ImageViewController.swift in Sources */,
